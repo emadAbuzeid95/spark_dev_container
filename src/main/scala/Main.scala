@@ -12,6 +12,7 @@ object Main {
     
     data.show()
     println(s"Versión de Spark: ${spark.version}")
+    spark.read.option("header", "true").option("delimiter", ";").csv("username.csv").show()
     
     
     spark.stop()
