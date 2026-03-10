@@ -1,8 +1,6 @@
 {
     "name": "Scala Spark 3.3 Dev Environment",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "image": "emad955/spark-scala-dev:3.3", 
     "customizations": {
         "vscode": {
             "extensions": [
