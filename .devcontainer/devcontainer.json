@@ -1,0 +1,19 @@
+{
+    "name": "Scala Spark 3.3 Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "scalameta.metals",           // El motor de inteligencia (LSP)
+                "scala-lang.scala",           // Resaltado de sintaxis oficial
+                "vscjava.vscode-java-pack",    // Extension Pack for Java (esencial para la JVM)
+                "usernamehw.errorlens",       // Errores escritos en la línea de código
+                "ms-azuretools.vscode-docker" // Gestión de Docker desde VS Code
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "postCreateCommand": "sbt sbtVersion" // Verifica que sbt esté listo al iniciar
+}
